@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <ctype.h>  
+
+int main() 
+{
+	int i;
+    char num[20];  
+    printf("Number: ");
+    scanf("%s", num); 
+
+    char reverse_num[20] = ""; 
+
+ 
+    for ( i = strlen(num)-1; i >= 0; i--) 
+	{
+        if (isdigit(num[i])) 
+		{  
+            strncat(reverse_num, &num[i], 1); 
+        }
+    }
+
+    printf("Reverse Number: %s\n", reverse_num); 
+    return 0;
+}
