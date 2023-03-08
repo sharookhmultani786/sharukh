@@ -2,7 +2,7 @@
 
 int main()
 {
-    int total_users, student_users, staff_users, non_teaching_staff ,total;
+    int total_users, student_users, staff_users, non_teaching_staff;
 
     printf("Enter the total number of users in the college: ");
     scanf("%d", &total_users);
